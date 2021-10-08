@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <title>PostMe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="drawPostContainer()">
+    <div class="headerContainer">
+        <div class="setMargin setStyle">
+            <div class="logoContainer">
+                PostMe
+            </div>
+            <div class="inputContainer">
+                <input type="text" class="input" id="input" onkeydown="findPost()">
+            </div>
+            <div class="iconContainer">
+                <img src="img/plus-5-32.png" class="icon plane" onclick="openNewPostDialog()" />
+                <img src="img/home-7-32.png" class="icon" />
+                <img src="img/paper-plane-32.png" class="icon" />
+                <img src="img/compass-3-32.png" class="icon" />
+                <img src="img/favorite-4-32.png" class="icon" />
+            </div>
+            <div class="menu">
+                <img id="respoBtn" src="img/menu-4-32.png" onclick="showRespoMenu()">
+                <div id="respoMenu" class="overlay-menu">
+
+                    <img src="img/plus-5-32.png" class="icon plane" onclick="openNewPostDialog()" />
+                    <img src="img/home-7-32.png" class="icon" />
+                    <img src="img/paper-plane-32.png" class="icon" />
+                    <img src="img/compass-3-32.png" class="icon" />
+                    <img src="img/favorite-4-32.png" class="icon" />
+
+
+                    <button id="closeBtn" onclick="closeRespoMenu()">close</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainSite" id="mainSite">
+        <div class="sideBar">
+
+        </div>
+        <div class="postMainContainer">
+            <div class="postContainer" id="postContainer">
+
+            </div>
+        </div>
+        <div class="authorMainContainer" id="authorMainContainer">
+            <div class="authorContainer">
+                <div class="users">
+                    <div class="user">
+                        <div class="image">
+                            <img class="imageSelf" id="mySelf" src="img/beard-1845166_640.jpg">
+                        </div>
+                        <div class="name">
+                            <span>AdrianoP</span>
+                            <p>Adriano Parente</p>
+                        </div>
+                    </div>
+                    <div class="toDo">
+                        Wechseln
+                    </div>
+                </div>
+
+                <div class="users">
+                    <div class="setFontToDo">
+                        <span>Vorschläge für dich</span>
+                    </div>
+                    <div class="toDo setFontToDo">
+                        Alle ansehen
+                    </div>
+                </div>
+
+                <div class="users">
+                    <div class="user">
+                        <div class="image">
+                            <img class="imageSelf" src="img\castle-2055197_640.png">
+                        </div>
+                        <div class="name">
+                            <span>Schloß_Donnersturm</span>
+                            <p>Follows you</p>
+                        </div>
+                    </div>
+                    <div class="toDo">
+                        Abonnieren
+                    </div>
+                </div>
+
+                <div class="users">
+                    <div class="user">
+                        <div class="image">
+                            <img class="imageSelf" src="img/bulli-4288994_640.jpg">
+                        </div>
+                        <div class="name">
+                            <span>OldtimerTreff_Niedergries</span>
+                            <p>Follows you</p>
+                        </div>
+                    </div>
+                    <div class="toDo">
+                        Abonnieren
+                    </div>
+                </div>
+
+                <div class="users">
+                    <div class="user">
+                        <div class="image">
+                            <img class="imageSelf" src="img/silhouette-2860007_640.png">
+                        </div>
+                        <div class="name">
+                            <span>mike_theBody</span>
+                            <p>Follows you</p>
+                        </div>
+                    </div>
+                    <div class="toDo">
+                        Abonnieren
+                    </div>
+                </div>
+
+                <div class="users">
+                    <div class="user">
+                        <div class="image">
+                            <img class="imageSelf" src="img/woman-6296048_640.jpg">
+                        </div>
+                        <div class="name">
+                            <span>sisi_chopper</span>
+                            <p>Follows you</p>
+                        </div>
+                    </div>
+                    <div class="toDo">
+                        Abonnieren
+                    </div>
+                </div>
+
+                <div class="users">
+                    <div class="user">
+                        <div class="image">
+                            <img class="imageSelf" src="img/environmental-protection-326923_640.jpg">
+                        </div>
+                        <div class="name">
+                            <span>Naturfreund_Brem</span>
+                            <p>Follows you</p>
+                        </div>
+                    </div>
+                    <div class="toDo">
+                        Abonnieren
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="newPostSite" id="newPostSite">
+        <div class="postHeader">
+            Neuer Post:
+        </div>
+        <div class="newPostContainer">
+            <input id="newPostName" size="50" placeholder="Name">
+            <input id="newPostLocation" size="50" placeholder="Location" />
+            <textarea id="newPostDescription" rows="6" cols="51" placeholder="Text"></textarea>
+            <img src="img/paper-plane-32.png" class="plane" onclick="addPost()" />
+        </div>
+
+    </div>
+</body>
+
+</html>

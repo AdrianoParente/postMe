@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+}
+
+.headerContainer {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    border-bottom: solid black 1px;
+    position: fixed;
+}
+
+.setMargin {
+    margin: 0 70px 0 200px;
+}
+
+.setStyle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoContainer {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Satisfy', cursive;
+    font-size: 60px;
+}
+
+.menu {
+    display: none;
+}
+
+.input {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+
+.icon {
+    margin-left: 15px;
+}
+
+.plane:hover {
+    cursor: pointer;
+}
+
+.overlay-menu {
+    position: absolute;
+    background-color: white;
+    width: 150px;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transform: translateX(150px);
+    transition: all 225ms ease-in-out;
+}
+
+.show-overlay-menu {
+    transform: translateX(0px);
+}
+
+.mainSite {
+    width: 100%;
+    display: flex;
+    background-color: lightgray;
+}
+
+.sideBar {
+    width: 15%;
+    background-color: lightgray;
+}
+
+.postMainContainer {
+    width: 55%;
+    background-color: lightgray;
+}
+
+.postContainer {
+    margin-top: 100px;
+}
+
+.authorMainContainer {
+    width: 40%;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+.authorContainer {
+    margin: 130px 100px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+}
+
+.users {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.user p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 13px;
+}
+
+.img_post {
+    background: linear-gradient(215deg, red, rgb(255, 215, 95));
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    margin-right: 10px;
+    padding: 2px;
+}
+.image{
+    display: flex;
+    object-fit: cover;
+}
+
+.imageSelf {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#mySelf {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    
+}
+
+.name {
+    margin-left: 15px;
+}
+
+.toDo {
+    color: rgb(30, 30, 243);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 70px;
+}
+
+.setFontToDo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(109, 109, 109);
+    font-weight: bold;
+}
+
+.post {
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: solid darkgrey 2px;
+}
+
+.headArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.authorBox {
+    display: flex;
+}
+
+.pictureContainer {
+    display: flex;
+    object-fit: cover;
+}
+
+.picture {
+    width: 100%;
+}
+
+.footerArea {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.iconContainerFooterArea {
+    margin-bottom: 10px;
+}
+
+.likeNumber {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.description {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.text {
+    font-weight: lighter;
+}
+
+.comment {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 15px;
+    color: rgb(168, 168, 168);
+}
+
+.setComment {
+    margin-bottom: 15px;
+}
+
+.newPostSite {
+    display: none;
+    background-color: darkgrey;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newPostContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.postHeader {
+    width: 400px;
+    height: 60px;
+    background-color: white;
+    border-radius: 15px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media(max-width:1100px) {
+    .sideBar {
+        display: none;
+    }
+    .postMainContainer {
+        background-color: black;
+    }
+    .authorMainContainer {
+        display: none;
+    }
+    .postMainContainer {
+        width: 100%;
+    }
+    .setMargin {
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media(max-width:650px) {
+    .inputContainer {
+        display: none;
+    }
+    .iconContainer {
+        display: none;
+    }
+    .headerContainer {
+        background-color: black;
+        color: white;
+    }
+    .logoContainer {
+        font-size: 30px;
+    }
+    .menu {
+        display: flex;
+    }
+}
